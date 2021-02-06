@@ -239,6 +239,9 @@ body .loader {
     padding: 16px;
     margin-top: 48px;
   }
+  .main .match-info h2 {
+    line-height: 54px !important;
+  }
 
   .heroimg {
     display: none;
@@ -249,9 +252,7 @@ body .loader {
   }
 
   footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 24px;
   }
 }
 @media all and (min-width: 499px) {

@@ -1,6 +1,6 @@
 let loadMatch = function () {
     var matches = [];
-    fetch('mainData.json')
+    fetch('./res/mainData.json')
         .then(response => response.json())
         .then(data => {
             //load JSON data to a new variable
@@ -18,8 +18,14 @@ let loadMatch = function () {
             matchLink.href = randomMatch.url
 
             //hide the loader
-            document.getElementsByClassName('loader')[0].style.display = 'none';
-            document.getElementsByClassName('main')[0].style.display = 'block';
+            let loader = document.getElementsByClassName('loader')[0]
+            loader.style.visibility = 'hidden'
+            loader.style.opacity = 0
+
+            let mainContent = document.getElementsByClassName('main')[0]
+            mainContent.style.visibility = 'visible'
+            mainContent.style.opacity = 1
+
         });
 }
 

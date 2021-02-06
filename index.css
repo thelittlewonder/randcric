@@ -138,7 +138,9 @@ body {
   position: relative;
 }
 body .main {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
   padding: 24px;
 }
 body .main section {
@@ -175,7 +177,7 @@ body .main section .match-info a {
   line-height: 32px;
   color: #BD3538;
   white-space: initial;
-  overflow-wrap: anywhere;
+  word-break: break-all;
 }
 body .main section .match-info button {
   padding: 16px 24px;
@@ -188,12 +190,12 @@ body .main section .match-info button {
   line-height: 21px;
   color: #F6F6EC;
   border: none;
-  transition: all 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 body .main section .match-info button .shuffleIcon {
   height: 12px;
   margin-right: 12px;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 body .main section .match-info button:focus {
   outline: none;
@@ -228,6 +230,12 @@ body .main footer img {
   width: 148px;
   margin-bottom: 16px;
 }
+body .loader {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
 @media all and (max-width: 499px) {
   .main {
     padding: 16px;
@@ -260,6 +268,41 @@ body .main footer img {
   }
   .main footer {
     margin-top: 72px;
+  }
+}
+.loader {
+  width: 40px;
+  height: 40px;
+  padding: 24px;
+  margin: 100px auto;
+  background-color: #BD3538;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
   }
 }
 

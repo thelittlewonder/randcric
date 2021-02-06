@@ -10,27 +10,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <section>
-        <p>You should watch</p>
-        <h2 id="matchTitle"></h2>
-        <a id="matchLink"></a>
-        <button id="reloadBtn"><img/>Get Another Suggestion</button>
-    </section>
-    <footer>
-        <img/>
-        <span>
-            <a href="">Contact</a>
-            <a href="">Source</a>
-        </span>
-    </footer>
+    <div class="loader">
+        Loading...
+    </div>
+    <div class="main">
+        <section>
+            <div class="match-info">
+                <div class="r0">
+                    <p>You should watch</p>
+                    <h2 id="matchTitle"></h2>
+                    <a id="matchLink" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="r1">
+                    <button id="reloadBtn"><img src="shuffle.svg" class="shuffleIcon"/>Get Another Suggestion</button>
+                </div>
+            </div>
+            <img src="hero.png" />
+        </section>
+        <footer>
+            <img src="randcric.svg" alt="Randcric" />
+            <span>
+                <a href="https://twitter.com/lilwonderspeaks" rel="noopener noreferrer">Contact</a>
+                <a href="https://repl.it/@thelittlewonder/randcric" rel="noopener noreferrer">Source</a>
+            </span>
+        </footer>
+    </div>
     <script src="index.js" async defer></script>
 </body>
 

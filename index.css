@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto+Mono:wght@700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #F6F6EC;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+body .main {
+  display: none;
+}
+body .main section {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  display: flex;
+}
+body .main section .match-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main section .match-info p {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #BD3538;
+}
+body .main section .match-info h2 {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  color: #370B0D;
+  margin: 16px 0 24px 0;
+}
+body .main section .match-info a {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #BD3538;
+  display: block;
+}
+body .main section .match-info button {
+  padding: 16px 24px;
+  background: #BD3538;
+  border-radius: 2px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #F6F6EC;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+body .main section .match-info button .shuffleIcon {
+  height: 12px;
+  margin-right: 12px;
+  transition: all 0.5s ease-in-out;
+}
+body .main section .match-info button:focus {
+  outline: none;
+}
+body .main section .match-info button:hover {
+  cursor: pointer;
+  background: #b53336;
+}
+body .main section .match-info button:hover .shuffleIcon {
+  transform: rotate(180deg);
+}
+body .main section img {
+  max-height: 400px;
+}
+body .main footer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+}
+body .main footer a {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #370B0D;
+  opacity: 0.3;
+  margin-right: 8px;
+}
+body .main footer img {
+  width: 148px;
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */

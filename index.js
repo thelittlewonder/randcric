@@ -16,11 +16,15 @@ let loadMatch = function () {
             matchTitle.innerHTML = randomMatch.title;
             matchLink.innerHTML = randomMatch.url
             matchLink.href = randomMatch.url
+
+            //hide the loader
+            document.getElementsByClassName('loader')[0].style.display = 'none';
+            document.getElementsByClassName('main')[0].style.display = 'block';
         });
 }
 
 loadMatch();
 
-document.getElementById('reloadBtn').addEventListener('click', function(){
+document.getElementById('reloadBtn').addEventListener('click', function () {
     loadMatch();
 })

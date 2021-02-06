@@ -193,7 +193,6 @@ body .main section .match-info button {
   transition: background 0.3s ease-in-out;
 }
 body .main section .match-info button .shuffleIcon {
-  height: 12px;
   margin-right: 12px;
   transition: transform 0.5s ease-in-out;
 }
@@ -227,7 +226,6 @@ body .main footer a {
   margin-right: 8px;
 }
 body .main footer img {
-  width: 148px;
   margin-bottom: 16px;
 }
 body .loader {

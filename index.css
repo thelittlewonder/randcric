@@ -201,7 +201,7 @@ body .main section .match-info button:focus {
 }
 body .main section .match-info button:hover {
   cursor: pointer;
-  background: #b53336;
+  background: #a92f32;
 }
 body .main section .match-info button:hover .shuffleIcon {
   transform: rotate(180deg);
@@ -248,7 +248,7 @@ body .loader {
   }
 
   .r1 {
-    margin-top: 24px;
+    margin-top: 48px;
   }
 
   footer {
@@ -267,6 +267,10 @@ body .loader {
   }
   .main footer {
     margin-top: 72px;
+  }
+
+  .r1 {
+    margin-top: 48px;
   }
 }
 .loader {

@@ -8,5 +8,3 @@ Data is scraped from:
 - BCCI
 - IPL
 - Youtube Playlists (India tour of NZ & WI, WC 2019, WC 2016, RobeLinda2)
-
-[Source on Repl](https://repl.it/@thelittlewonder/randcric)
